@@ -1,0 +1,234 @@
+{
+    "productos": [
+        {
+            "nombre": "Aceite de Girasol 1L",
+            "categoria": "Almacen",
+            "cantidad": 50,
+            "precio": 1800
+        },
+        {
+            "nombre": "Harina 000 1kg",
+            "categoria": "Almacen",
+            "cantidad": 100,
+            "precio": 680
+        },
+        {
+            "nombre": "Azúcar Comun 1kg",
+            "categoria": "Almacen",
+            "cantidad": 80,
+            "precio": 700
+        },
+        {
+            "nombre": "Leche Serenisima Entera 1L",
+            "categoria": "Almacen",
+            "cantidad": 70,
+            "precio": 1500
+        },
+        {
+            "nombre": "Arroz 1kg",
+            "categoria": "Almacen",
+            "cantidad": 90,
+            "precio": 1500
+        },
+        {
+            "nombre": "Fideos Spaghetti",
+            "categoria": "Almacen",
+            "cantidad": 60,
+            "precio": 700
+        },
+        {
+            "nombre": "Lentejas 500g",
+            "categoria": "Almacen",
+            "cantidad": 50,
+            "precio": 650
+        },
+        {
+            "nombre": "Sal Fina 500g",
+            "categoria": "Almacen",
+            "cantidad": 100,
+            "precio": 700
+        },
+        {
+            "nombre": "Café Arlistan chico",
+            "categoria": "Almacen",
+            "cantidad": 40,
+            "precio": 1800
+        },
+        {
+            "nombre": "Té Taragui",
+            "categoria": "Almacen",
+            "cantidad": 70,
+            "precio": 1100
+        },
+        {
+            "nombre": "Mermelada de Durazno 454g",
+            "categoria": "Almacen",
+            "cantidad": 30,
+            "precio": 1000
+        },
+        {
+            "nombre": "Galletitas Traviata",
+            "categoria": "Almacen",
+            "cantidad": 40,
+            "precio": 700
+        },
+
+        {
+            "nombre": "Queso Cremoso 1kg",
+            "categoria": "Fiambreria",
+            "cantidad": 20,
+            "precio": 6000
+        },
+        {
+            "nombre": "Jamón Cocido 100g",
+            "categoria": "Fiambreria",
+            "cantidad": 25,
+            "precio": 1600
+        },
+        {
+            "nombre": "Salame 100",
+            "categoria": "Fiambreria",
+            "cantidad": 15,
+            "precio": 1500
+        },
+        {
+            "nombre": "Pan Lactal chico",
+            "categoria": "Fiambreria",
+            "cantidad": 30,
+            "precio": 1100
+        },
+        {
+            "nombre": "Mortadela 100g",
+            "categoria": "Fiambreria",
+            "cantidad": 20,
+            "precio": 600
+        },
+        {
+            "nombre": "Queso Mar del Plata 1kg",
+            "categoria": "Fiambreria",
+            "cantidad": 18,
+            "precio": 2800
+        },
+        {
+            "nombre": "Salamin 1kg",
+            "categoria": "Fiambreria",
+            "cantidad": 15,
+            "precio": 2400
+        },
+        {
+            "nombre": "Panceta 100g",
+            "categoria": "Fiambreria",
+            "cantidad": 10,
+            "precio": 1400
+        },
+        {
+            "nombre": "Salchichas 6u",
+            "categoria": "Fiambreria",
+            "cantidad": 25,
+            "precio": 1100
+        },
+
+        {
+            "nombre": "Coca-Cola 2.25L",
+            "categoria": "Kiosco",
+            "cantidad": 50,
+            "precio": 2500
+        },
+        {
+            "nombre": "Nesquik",
+            "categoria": "Kiosco",
+            "cantidad": 100,
+            "precio": 1500
+        },
+        {
+            "nombre": "Galletitas Pitusas",
+            "categoria": "Kiosco",
+            "cantidad": 40,
+            "precio": 650
+        },
+        {
+            "nombre": "Papas Fritas 100g",
+            "categoria": "Kiosco",
+            "cantidad": 60,
+            "precio": 1200
+        },
+        {
+            "nombre": "Caramelos",
+            "categoria": "Kiosco",
+            "cantidad": 2000,
+            "precio": 20
+        },
+        {
+            "nombre": "Chicles",
+            "categoria": "Kiosco",
+            "cantidad": 150,
+            "precio": 100
+        },
+        {
+            "nombre": "Alfajor Capitan del espacio",
+            "categoria": "Kiosco",
+            "cantidad": 80,
+            "precio": 1000
+        },
+        {
+            "nombre": "Gomitas",
+            "categoria": "Kiosco",
+            "cantidad": 100,
+            "precio": 50
+        },
+        {
+            "nombre": "Palitos Salados",
+            "categoria": "Kiosco",
+            "cantidad": 70,
+            "precio": 1000
+        },
+        {
+            "nombre": "Maní Confitado",
+            "categoria": "Kiosco",
+            "cantidad": 60,
+            "precio": 750
+        },
+        {
+            "nombre": "Bizcochos Don Satur",
+            "categoria": "Kiosco",
+            "cantidad": 50,
+            "precio": 700
+        },
+        {
+            "nombre": "Turrón",
+            "categoria": "Kiosco",
+            "cantidad": 40,
+            "precio": 750
+        },
+        {
+            "nombre": "Barrita de Cereal",
+            "categoria": "Kiosco",
+            "cantidad": 50,
+            "precio": 800
+        },
+        {
+            "nombre": "Agua Mineral 500ml",
+            "categoria": "Kiosco",
+            "cantidad": 90,
+            "precio": 800
+        },
+        {
+            "nombre": "Jugo Tang",
+            "categoria": "Kiosco",
+            "cantidad": 80,
+            "precio": 300
+        },
+        {
+            "nombre": "Cerveza Lata Quilmes 470ml",
+            "categoria": "Kiosco",
+            "cantidad": 60,
+            "precio": 1300
+        },
+        {
+            "nombre": "Vino Termidor 1L",
+            "categoria": "Kiosco",
+            "cantidad": 20,
+            "precio": 2500
+        }
+    ]
+}

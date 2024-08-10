@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Productos</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Control de inventario</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="buscar-input" placeholder="Buscar productos...">
+            <button id="buscar-button">Buscar</button>
+            <button id="mostrar-inventario-button">Mostrar Inventario</button>
+            <button id="agregar-producto-button">Registrar Producto</button>
+        </div>
+        <div id="agregar-producto-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" id="agregar-modal-close-button">&times;</span>
+                <h2>Agregar Producto</h2>
+                <input type="text" id="agregar-modal-producto-nombre" placeholder="Nombre del producto">
+                <input type="text" id="agregar-modal-producto-categoria" placeholder="Categoría">
+                <input type="number" id="agregar-modal-producto-cantidad" placeholder="Cantidad">
+                <input type="number" id="agregar-modal-producto-precio" placeholder="Precio">
+                <button class="agregar-button" id="agregar-modal-button">Agregar</button>
+            </div>
+        </div>
+        <div id="editar-producto-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" id="editar-modal-close-button">&times;</span>
+                <h2>Editar Producto</h2>
+                <input type="text" id="editar-modal-producto-nombre" placeholder="Nombre del producto">
+                <input type="text" id="editar-modal-producto-categoria" placeholder="Categoría">
+                <input type="number" id="editar-modal-producto-cantidad" placeholder="Cantidad">
+                <input type="number" id="editar-modal-producto-precio" placeholder="Precio">
+                <button class="actualizar-button" id="editar-modal-update-button">Actualizar</button>
+            </div>
+        </div>
+        <table id="productos-tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th class="acciones-header">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="paginacion-controles" class="paginacion-controles"></div>
+    </div>
+    <footer class="footer-index">
+        <div class="footer-information">
+            <div class="information-column">
+                <a href="https://www.coderhouse.com/" target="_blank">
+                    <img src="../img/1-logo-coderhouse.png" class="logo-coder" alt="Logo de Coderhouse" />
+                </a>
+            </div>
+            <div class="information-column">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Nuestra aplicación está diseñada para ayudar a empresas de todos los tamaños a gestionar eficientemente sus stocks.</p>
+            </div>
+            <div class="information-column">
+                <h2>SÍGUENOS</h2>
+                <div class="footer-contact">
+                    <a href="https://www.facebook.com/geronimobazann/" target="_blank" class="bi bi-facebook"></a>
+                    <a href="https://www.instagram.com/geronimobazan/" target="_blank" class="bi bi-instagram"></a>
+                    <a href="https://wa.me/5491123503172" target="_blank" class="bi bi-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <small>© 2024 | <b>Sitio diseñado por</b> - Gerónimo Bazán. Estudiante de CoderHouse.</small>
+        </div>
+    </footer>
+    <script src="/JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

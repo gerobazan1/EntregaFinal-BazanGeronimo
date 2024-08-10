@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    background: #044a7c;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #bbb 1px solid;
+}
+
+header h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left; 
+}
+
+table th {
+    background-color: #053047c4;
+    color: #fff;
+}
+
+table th:nth-child(2),
+table th:nth-child(3),
+table th:nth-child(4),
+table th:nth-child(5),
+table td:nth-child(2),
+table td:nth-child(3),
+table td:nth-child(4),
+table td:nth-child(5) {
+    text-align: center;
+}
+
+.acciones-column {
+    text-align: center;
+}
+
+.acciones-column button {
+    display: inline-block;
+    margin: 0 5px; 
+    padding: 5px 10px;
+}
+
+.mostrar-acciones .acciones-header {
+    display: table-cell; 
+    width: 175px; 
+}
+
+.mostrar-acciones .acciones-column {
+    display: table-cell;
+    width: 180px;
+}
+
+.acciones-header,
+.acciones-column {
+    display: none; 
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #007bb5; 
+    color: #FFFFFF; 
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f8f;
+}
+
+
+#buscarProductoBtn, #mostrarInventarioBtn, #registrarProductoBtn {
+    background-color: #007bb5;
+}
+#buscarProductoBtn:hover, #mostrarInventarioBtn:hover, #registrarProductoBtn:hover {
+    background-color: #005f8f; 
+}
+
+input[type="text"], input[type="number"] {
+    margin: 5px;
+    padding: 10px;
+    width: calc(25% - 22px); 
+}
+
+input[type="hidden"] {
+    display: none;
+}
+
+/* Toastify */
+.toast-message {
+    font-size: 12px;
+    padding: 8px; 
+    border-radius: 3px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative; 
+}
+
+/* Cerrar del modal */
+.close-modal {
+    color: #aaa;
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Inputs y botones */
+.modal input[type="text"], 
+.modal input[type="number"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px); 
+}
+
+.modal button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Boton agregar */
+.agregar-button {
+    background-color: #03d229; 
+    color: #fff;
+}
+.agregar-button:hover {
+    background-color: #089914a4; 
+}
+
+/* Boton editar */
+.editar-button {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.editar-button:hover {
+    background-color: #0056b3; 
+}
+
+/* Boton actualizar */
+.actualizar-button {
+    background-color: #fd7e14; 
+    color: #fff;
+}
+.actualizar-button:hover {
+    background-color: #e96e00; 
+}
+
+/* Boton eliminar */
+.eliminar-button {
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.eliminar-button:hover {
+    background-color: #c82333; 
+}
+
+.modal button {
+    margin-top: 10px;
+    width: calc(100% - 22px); 
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Paginacion */
+.paginacion-controles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.paginacion-controles button {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.paginacion-controles button:hover {
+    background-color: #ddd;
+}
+.paginacion-controels button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+footer {
+    background: #003053;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer .footer-information {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px; 
+    padding: 10px;
+}
+
+footer .footer-information .information-column {
+    padding: 5px;
+}
+
+footer .footer-information .information-column img {
+    max-width: 45%; 
+    height: auto; 
+}
+
+footer .footer-information h2 {
+    margin: 0 0 10px; 
+}
+
+footer .footer-information p {
+    margin: 0; 
+}
+
+footer .footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+footer .footer-contact a {
+    font-size: 24px; 
+    color: white; 
+    text-decoration: none;
+}
+
+footer .footer-contact a:hover {
+    color: #d3d3d3;
+}
+
+footer .footer-copyright {
+    background-color: #002740;
+    padding: 5px;
+    font-size: 14px; 
+}
+
+footer .footer-copyright small {
+    display: block;
+    color: #d3d3d3;
+}
+
+footer .footer-copyright b {
+    color: #ffffff;
+}
