@@ -34,7 +34,7 @@ const guardarProductosEnLocalStorage = (products) => {
 };
 
 // Funciones de visualización
-const displayProductos = (products, mostrarAcciones = true, originalIndices = []) => {
+const displayProductos = (products = [], mostrarAcciones = true, originalIndices = []) => {
     const tbody = document.querySelector('#productos-tabla tbody');
     const thead = document.querySelector('#productos-tabla thead');
 
@@ -300,7 +300,7 @@ document.querySelector('#buscar-button').addEventListener('click', () => {
 
 const mostrarProductos = () => {
     const products = obtenerProductosDesdeLocalStorage();
-    displayProductos(products.productos, true); 
+    displayProductos(products.productos, true);
 };
 
 // "Mostrar Inventario"
@@ -328,15 +328,26 @@ const cambiarPagina = (pagina) => {
 
 // Paginacion
 const displayControlPaginacion = (totalPaginas) => {
-    const paginacionContainer = document.querySelector('#paginacion-controles');
-    paginacionContainer.innerHTML = ''; 
+    const paginacionDiv = document.querySelector('#paginacion-controles'); // Usamos el ID correcto
+    
+    if (!paginacionDiv) {
+        console.error('El contenedor de paginación no existe.');
+        return;
+    }
+    
+    paginacionDiv.innerHTML = '';
 
     for (let i = 1; i <= totalPaginas; i++) {
-        const paginaButton = document.createElement('button');
-        paginaButton.innerText = i;
-        paginaButton.classList.add('page-button');
-        if (i === actualPagina) paginaButton.classList.add('active');
-        paginaButton.addEventListener('click', () => cambiarPagina(i));
-        paginacionContainer.appendChild(paginaButton);
+        const pageButton = document.createElement('button');
+        pageButton.innerText = i;
+        pageButton.classList.add('page-button');
+        if (i === actualPagina) {
+            pageButton.classList.add('active');
+        }
+        pageButton.addEventListener('click', () => {
+            cambiarPagina(i);
+        });
+        paginacionDiv.appendChild(pageButton);
     }
 };
+document.addEventListener('DOMContentLoaded', mostrarProductos);
