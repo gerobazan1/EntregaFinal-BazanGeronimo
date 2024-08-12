@@ -6,7 +6,7 @@ const loadAndStoreProducts = async () => {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const products = await response.json();
-        saveProductsToLocalStorage({ productos: products });
+        guardarProductosEnLocalStorage({ productos: products });
     } catch (error) {
         console.error('Error al cargar productos:', error);
     }
